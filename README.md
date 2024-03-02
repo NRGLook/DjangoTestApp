@@ -1,5 +1,6 @@
 # DjangoTestApp
 Test task for company HardQode
+# Code of the test task on the master branch
 
 # Построение системы для обучения
 
