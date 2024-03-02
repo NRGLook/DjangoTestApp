@@ -1,6 +1,18 @@
 # DjangoTestApp
-Test task for company HardQode
-# Code of the test task provided on the master branch
+## Test task for company HardQode
+### Code of the test task provided on the master branch
+### Passwords for admin-panel(login, password): admin, admin
+
+# Тестовое задание Backend/Django
+
+1. https://docs.djangoproject.com/en/4.2/intro/tutorial01/
+2. https://docs.djangoproject.com/en/4.2/topics/db/models/
+3. https://docs.djangoproject.com/en/4.2/topics/db/queries/
+4. https://docs.djangoproject.com/en/4.2/ref/models/querysets/
+5. https://docs.djangoproject.com/en/4.2/topics/signals/
+6. https://www.django-rest-framework.org/tutorial/quickstart/
+7. https://www.django-rest-framework.org/api-guide/viewsets/
+8. https://www.django-rest-framework.org/api-guide/serializers/
 
 # Построение системы для обучения
 
@@ -28,4 +40,16 @@ Test task for company HardQode
 2. Реализовать API на список продуктов, доступных для покупки, которое бы включало в себя основную информацию о продукте и количество уроков, которые принадлежат продукту. **(2 балла)**
 3. Реализовать API с выведением списка уроков по конкретному продукту к которому пользователь имеет доступ. **(1 балл)**.
 
-### admin - admin
+### **Результат выполнения:**
+
+1. Выполненная архитектура на базе данных SQLite с использованием Django.
+2. Реализованные API на базе готовой архитектуры.
+
+### **Доп задание:**
+Реализовать API для отображения статистики по продуктам. 
+
+Необходимо отобразить список всех продуктов на платформе, к каждому продукту приложить информацию:
+
+1. Количество учеников занимающихся на продукте.
+2. На сколько % заполнены группы? (среднее значение по количеству участников в группах от максимального значения участников в группе).
+3. Процент приобретения продукта (рассчитывается исходя из количества полученных доступов к продукту деленное на общее количество пользователей на платформе).
