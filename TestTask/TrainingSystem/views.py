@@ -1,15 +1,24 @@
-from django.db.models import Count
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from django.db.models import Count
+
 from .models import Product, Lesson
 from .serializers import LessonSerializer, ProductSerializer, ProductStatsSerializer
 
+from django.http import HttpResponse
+from django.views import View
+
+
+class IndexView(View):
+    def get(self, request):
+        return HttpResponse("Welcome to our training system!")
+
 
 class ProductListAPIView(generics.ListAPIView):
-    queryset = Product.objects.all()
+    queryset = Product.objects.prefetch_related('lesson_set')
     serializer_class = ProductSerializer
 
 
