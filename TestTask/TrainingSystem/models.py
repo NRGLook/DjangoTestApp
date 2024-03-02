@@ -7,6 +7,7 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     start_date_time = models.DateTimeField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
+    min_students_per_group = models.IntegerField(default=0)
 
 
 class UserProductAccess(models.Model):
